@@ -198,16 +198,18 @@ angular.module('raw.controllers', [])
 
 
     $scope.samples = [
-      { title : 'Biggest cities per continent', type : 'Distributions', url : 'data/cities.csv'},
-      { title : 'Countries GDP', type : 'Other', url : 'data/countriesGDP.csv'},
-      { title : 'Cars', type : 'Multivariate', url : 'data/multivariate.csv' },
-      { title : 'Movies', type : 'Dispersions', url : 'data/dispersions.csv' },
-      { title : 'Music industry', type: 'Time Series', url : 'data/music.csv' },
-      { title : 'Lineup', type : 'Time chunks', url : 'data/lineup.tsv' },
-      { title : 'Orchestras', type : 'Hierarchies (weighted)', url : 'data/orchestra.csv' },
-      { title : 'Animal kingdom', type: 'Hierarchies', url : 'data/animals.tsv' },
-      { title : 'Titanic\'s passengers', type : 'Multi categorical', url : 'data/titanic.tsv' },
-      { title : 'Most frequent letters', type: 'Matrix (narrow)', url:'data/letters.tsv'}
+//      { title : 'Biggest cities per continent', type : 'Distributions', url : 'data/cities.csv'},
+//      { title : 'Countries GDP', type : 'Other', url : 'data/countriesGDP.csv'},
+//      { title : 'Cars', type : 'Multivariate', url : 'data/multivariate.csv' },
+//      { title : 'Movies', type : 'Dispersions', url : 'data/dispersions.csv' },
+//      { title : 'Music industry', type: 'Time Series', url : 'data/music.csv' },
+//      { title : 'Lineup', type : 'Time chunks', url : 'data/lineup.tsv' },
+//      { title : 'Orchestras', type : 'Hierarchies (weighted)', url : 'data/orchestra.csv' },
+//      { title : 'Animal kingdom', type: 'Hierarchies', url : 'data/animals.tsv' },
+//      { title : 'Titanic\'s passengers', type : 'Multi categorical', url : 'data/titanic.tsv' },
+//      { title : 'Most frequent letters', type: 'Matrix (narrow)', url:'data/letters.tsv'},
+      { title : 'Unemployment rates in Italy', type: 'Map', url:'data/unemployment.tsv'},
+      { title : 'Population of Italian cities', type: 'Map', url:'data/italian_cities.tsv'}
     ]
 
     $scope.selectSample = function(sample) {
@@ -418,7 +420,8 @@ angular.module('raw.controllers', [])
     });
 
     $scope.charts = raw.charts.values().sort(function (a,b){ return d3.ascending(a.category(),b.category()) || d3.ascending(a.title(),b.title()) })
-    $scope.chart = $scope.charts.filter(function(d){return d.title() == 'Scatter Plot'})[0];
+    $scope.chart = $scope.charts.filter(function(d){return d.title() == 'Choropleth'})[0];
+//    $scope.chart = $scope.charts.filter(function(d){return d.title() == 'Scatter Plot'})[0];
     $scope.model = $scope.chart ? $scope.chart.model() : null;
 
     $scope.$watch('error', function (error){

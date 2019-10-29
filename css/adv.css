@@ -1,0 +1,61 @@
+.adv {
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%),linear-gradient(to bottom, #fff 10%, rgba(255,255,255,0) 20%),url(https://s3.amazonaws.com/thinkific-import/143718/LccoDP7LSNaI2PtjllY3_dns_hero_orig.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid #924cff;
+    position: relative;
+    padding: 50px;
+}
+
+.adv i {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    color: #924cff;
+    cursor: pointer;
+}
+
+.adv img {
+    height: 100px;
+}
+
+.adv h1 {
+    font-family: "Changa", sans-serif;
+    font-weight: 700;
+    color: #322e4f;
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+.adv h2 {
+    font-family: "Changa", sans-serif;
+    font-weight: 700;
+    color: #4D4DA0;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.adv p {
+    font-family: "Lekton", sans-serif;
+    font-weight: bold;
+    color: #924cff;
+    font-size: 2rem;
+}
+
+.adv .btn {
+    font-family: "Lekton", sans-serif;
+    font-weight: bold;
+    border: 2px solid #924cff;
+    background-color: #924cff;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}

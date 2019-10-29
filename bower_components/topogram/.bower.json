@@ -1,0 +1,14 @@
+{
+  "name": "topogram",
+  "homepage": "https://github.com/jenkin/topogram",
+  "_release": "eb12f80f02",
+  "_resolution": {
+    "type": "branch",
+    "branch": "develop",
+    "commit": "eb12f80f02250f3d6d189a5a87243df664430e5e"
+  },
+  "_source": "https://github.com/jenkin/topogram.git",
+  "_target": "develop",
+  "_originalSource": "jenkin/topogram",
+  "_direct": true
+}

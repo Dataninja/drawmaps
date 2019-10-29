@@ -1,0 +1,35 @@
+.navbar {
+    padding-bottom: 0;
+}
+.banner {
+    background: #9538ef;
+    padding: 5px;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+}
+.banner .btn {
+    background-color: #eb1478;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-left: 5em;
+    color: white;
+    font-weight: bold;
+}
+.banner em {
+    background-color: #eb1478;
+    font-style: normal;
+}
+.banner i {
+    margin-left: 1em;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+}
+/*! CSS Used keyframes */
+@keyframes bannerDonate-module--blink-animation--3K_bw{to{visibility:hidden;}}
+@-webkit-keyframes bannerDonate-module--blink-animation--3K_bw{to{visibility:hidden;}}
+.bannerDonate-module--blink {
+    -webkit-animation: bannerDonate-module--blink-animation--3K_bw 1s steps(5,start) infinite;
+    animation: bannerDonate-module--blink-animation--3K_bw 1s steps(5,start) infinite;
+}
