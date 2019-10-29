@@ -26,7 +26,7 @@ Under some assumptions, we successfully developed seven new charts:
 * cartogram  (continuous variables),
 * choropleth  (continuous variables),
 * markers map (geographic points),
-* thematic map with patterns (continuous variables), textures and colors (cathegorical variables).
+* thematic map with patterns (continuous variables), textures and colors (categorical variables).
 
 ![geo charts](https://raw.githubusercontent.com/Dataninja/drawmaps/master/screenshots/geo-charts.png)
 
@@ -43,7 +43,7 @@ Please note also these geographical shapes change over time and needs to be kept
 ## How to use
 
 User experience is the same as standard RAWGraphs. We removed all charts, but the geographic ones to focus attention on new features.
-To start you can use the provided samples to play with continuous and cathegorical data, with thematic maps or geographic points.
+To start you can use the provided samples to play with continuous and categorical data, with thematic maps or geographic points.
 
 ## The source code
 
@@ -85,7 +85,7 @@ We also added several fields to customize map parameters:
 * 6 color scales: blues, purples, greens, oranges, reds, greys
 * 7 binning algorithms: jenks, equal interval, quantile, standard deviation, arithmetic and geometric progression, unique values
 * 7 textures for continuous variables: circles and horizontal, diagonal, inverse diagonal, vertical, grid, and diamond lines
-* 7 textures for cathegorical variables: squares, nylon, waves, woven, crosses, caps, hexagons
+* 7 textures for categorical variables: squares, nylon, waves, woven, crosses, caps, hexagons
 * opacity and stroke width
 * dozens of geographic projections supported by d3-geo
 
